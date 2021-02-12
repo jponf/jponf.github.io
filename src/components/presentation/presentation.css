@@ -1,14 +1,14 @@
 
-
-
-
 #presentation {
-    background-image: url(@/assets/images/abstract-graph.svg);
+    padding-bottom: 2em;
+}
+
+#presentation-header {
+    padding-top: 1em;
 }
 
 #presentation h1 {
     font-weight: 300;
-    padding-top: 2em;
 }
 
 #presentation h2 {
