@@ -1,13 +1,20 @@
 
 
-h2 {
-    font-weight: 300;
-    font-size: 1.5em;
-    padding-top: 2em;
-}
+
 
 #presentation {
     background-image: url(@/assets/images/abstract-graph.svg);
+}
+
+#presentation h1 {
+    font-weight: 300;
+    padding-top: 2em;
+}
+
+#presentation h2 {
+    font-weight: 300;
+    font-size: 1.5em;
+    padding-top: 2em;
 }
 
 #avatar {
