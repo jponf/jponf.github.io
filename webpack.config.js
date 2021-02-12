@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const paths = {
     src: path.resolve(__dirname, "src"),
@@ -19,6 +20,12 @@ module.exports = {
             template: path.resolve(__dirname, "src", "index.html"),
             favicon: path.resolve(__dirname, "src", "assets", "index-favicon.ico"),
             chunks: ["index"],
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.join("src", "assets", "images", "skills"),
+                  to: path.join("assets", "images", "skills")},
+            ],
         }),
     ],
     resolve: {
@@ -48,6 +55,10 @@ module.exports = {
                         root: paths.src,
                     },
                 },
+            },
+            {
+                test: /\.(hbs|handlebars)$/i,
+                loader: "handlebars-loader",
             },
         ],
     },

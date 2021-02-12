@@ -5,7 +5,7 @@ var last_scroll_top = 0;
 
 
 export default function renderNavBar(container) {
-    var template = document.createElement('template')
+    var template = document.createElement('template');
     template.innerHTML = navbar;
 
     if (template.content.childNodes.length != 1) {

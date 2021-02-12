@@ -1,0 +1,8 @@
+
+.card-body h4 {
+    font-weight: 400;
+}
+
+.skill-progress-bar {
+    background: linear-gradient(45deg, #80cbc4  0%, #3aa197  100%) !important;
+}

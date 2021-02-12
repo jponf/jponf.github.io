@@ -4,7 +4,7 @@ import presentation from "./presentation.html"
 import './presentation.css'
 
 export default function renderPresentation(container) {
-    var template = document.createElement('template')
+    var template = document.createElement('template');
     template.innerHTML = presentation;
 
     if (template.content.childNodes.length != 1) {
