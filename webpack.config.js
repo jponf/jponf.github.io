@@ -10,16 +10,16 @@ module.exports = {
     entry: {
         index: "./src/index.js",
     },
+    output: {
+        filename: "bundle.js",
+        path: path.resolve(__dirname, "dist"),
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
             chunks: ["index"],
         }),
     ],
-    output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "dist"),
-    },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, "src"),
@@ -32,7 +32,11 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|git)$/i,
+                test: /\.s[ac]ss$/i,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
             {
