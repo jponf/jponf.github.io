@@ -1,8 +1,23 @@
 
-#mainNavbar {
-    background-color: #DAAD86;
+#main-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: auto;
+    background-color: #BC986A; /* #DAAD86;*/
 }
 
 .navbar-nav a {
     color: white;
+}
+
+.navbar-scroll-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-scroll-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
