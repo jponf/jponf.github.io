@@ -1,4 +1,7 @@
+// Bootstrap styles and js
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+
 import createNavBar from './components/navbar/navbar.js';
 import createPresentation from './components/presentation/presentation.js';
 // import "./index.css";

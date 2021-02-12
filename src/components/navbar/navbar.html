@@ -1,12 +1,23 @@
-<nav id="main-navbar" class="navbar navbar-dark navbar-expand-lg fg-light">
-    <a class="navbar-brand" href="#">Josep Pon Farreny</a>
+<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg fg-light justify-content-between">
+    <div class="container-sm">
+        <a class="navbar-brand" href="#">Josep Pon Farreny</a>
 
-    <div class="collapse navbar-collapse navbar-center">
-        <links>
-            <div class="navbar-nav">
+        <!-- Toggler/collapsible button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"/>
+        </button>
+
+        <!-- Collapsible navbar items -->
+        <div id="collapsibleNavbar" class="navbar-collapse collapse">
+            <links class="navbar-nav">
                 <a class="nav-item nav-link waves-effect waves-dark"
-                 href="#techs">Technologies</a>
-            </div>
-        </links>
+                    href="#about">About</a>
+                <a class="nav-item nav-link waves-effect waves-dark"
+                    href="#techs">Technologies</a>
+                <a class="nav-item nav-link waves-effect waves-dark"
+                    href="#projects">Projects</a>
+            </links>
+        </div>
     </div>
 </nav>
