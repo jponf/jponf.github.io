@@ -16,7 +16,6 @@ export default function renderPresentation(container) {
             var presentation = document.getElementById("presentation");
 
             // Account for navigation var height
-            console.log(presentation)
             presentation.style.paddingTop = navbar.offsetHeight + "px";
         });
     }
