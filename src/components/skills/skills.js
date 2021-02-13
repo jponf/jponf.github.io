@@ -28,8 +28,18 @@ export default function renderSkills(container) {
             level: 8
         },
         {
-            name: 'Google Cloud',
-            img: 'gcp.png',
+            name: "Google Cloud",
+            img: "gcp.png",
+            level: 7
+        },
+        {
+            name: "Latex",
+            img: "latex.png",
+            level: 8
+        },
+        {
+            name: "Grid Engine",
+            img: "grid-engine.png",
             level: 7
         },
         {
@@ -48,7 +58,7 @@ export default function renderSkills(container) {
     } else {
         container.appendChild(template.content.childNodes[0]);
         // sort skills
-        techSkills.sort(function(a, b) {return a - b});
+        techSkills.sort(function(a, b) {return b.level - a.level});
 
         waitForElement("#skills-tech").then(function() {
             var skillsTech = document.getElementById("skills-tech");
