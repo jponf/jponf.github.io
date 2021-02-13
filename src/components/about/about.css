@@ -1,14 +1,16 @@
 
+#aboutme p {
+    font-size: 1.1em;
+}
+
 @media (min-width: 992px)  {
     #aboutme p {
         width: 75%;
-        font-size: 1.1em;
     }
 }
 
 @media (max-width: 992px) {
     #aboutme p {
         width: 95%;
-        font-size: 0.8em;
     }
 }

@@ -28,8 +28,18 @@ export default function renderSkills(container) {
             level: 8
         },
         {
-            name: 'Google Cloud',
-            img: 'gcp.png',
+            name: "Google Cloud",
+            img: "gcp.png",
+            level: 7
+        },
+        {
+            name: "Latex",
+            img: "latex.png",
+            level: 8
+        },
+        {
+            name: "Grid Engine",
+            img: "grid-engine.png",
             level: 7
         },
         {
@@ -48,24 +58,16 @@ export default function renderSkills(container) {
     } else {
         container.appendChild(template.content.childNodes[0]);
         // sort skills
-        techSkills.sort(function(a, b) {return a - b});
+        techSkills.sort(function(a, b) {return b.level - a.level});
 
         waitForElement("#skills-tech").then(function() {
             var skillsTech = document.getElementById("skills-tech");
             for (var x of techSkills) {
 
-                var cardDiv = document.createElement("div");
-                cardDiv.classList.add("card");
-                cardDiv.classList.add("m-1");
-                cardDiv.classList.add("col-sm-12");
-                cardDiv.classList.add("col-md-4");
-                cardDiv.classList.add("col-lg-4");
-                cardDiv.classList.add("mb-2");
-                cardDiv.classList.add("pl-0");
-                cardDiv.classList.add("pr-0");
+                var cardTemplate = document.createElement('template');
+                cardTemplate.innerHTML = cardHBS({skill: x});
 
-                cardDiv.innerHTML = cardHBS({skill: x});
-                skillsTech.appendChild(cardDiv);
+                skillsTech.appendChild(cardTemplate.content.childNodes[0]);
             }
         });
 
