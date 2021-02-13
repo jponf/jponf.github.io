@@ -1,5 +1,9 @@
 
-.card-body h4 {
+.skill-card-body {
+    padding: 1rem;
+}
+
+.skill-card-body h4 {
     font-weight: 400;
 }
 

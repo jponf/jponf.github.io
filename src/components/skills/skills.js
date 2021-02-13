@@ -54,18 +54,10 @@ export default function renderSkills(container) {
             var skillsTech = document.getElementById("skills-tech");
             for (var x of techSkills) {
 
-                var cardDiv = document.createElement("div");
-                cardDiv.classList.add("card");
-                cardDiv.classList.add("m-1");
-                cardDiv.classList.add("col-sm-12");
-                cardDiv.classList.add("col-md-4");
-                cardDiv.classList.add("col-lg-4");
-                cardDiv.classList.add("mb-2");
-                cardDiv.classList.add("pl-0");
-                cardDiv.classList.add("pr-0");
+                var cardTemplate = document.createElement('template');
+                cardTemplate.innerHTML = cardHBS({skill: x});
 
-                cardDiv.innerHTML = cardHBS({skill: x});
-                skillsTech.appendChild(cardDiv);
+                skillsTech.appendChild(cardTemplate.content.childNodes[0]);
             }
         });
 
