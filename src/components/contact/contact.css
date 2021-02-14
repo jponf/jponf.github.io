@@ -1,0 +1,12 @@
+
+#contactme li {
+    color: rgb(7, 187, 187);
+    z-index: 120 !important;
+    transition: color 1s;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+#contactme a {
+    font-size: 3em;
+}
