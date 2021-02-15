@@ -1,12 +1,33 @@
 
 #contactme li {
-    color: rgb(7, 187, 187);
     z-index: 120 !important;
     transition: color 1s;
     padding-left: .25em;
     padding-right: .25em;
 }
 
+#contactme a:link {
+    color: #659DBD;
+    text-decoration: none;
+}
+
+#contactme a:visited {
+    color: #659DBD;
+    text-decoration: none;
+}
+
 #contactme a {
-    font-size: 3em;
+    font-size: 3.5em;
+}
+
+.fa-github:hover {
+    color: #333333;
+}
+
+.fa-linkedin:hover {
+    color: #2867b2;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
 }
