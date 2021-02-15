@@ -46,6 +46,11 @@ export default function renderSkills(container) {
             name: "Angular",
             img: "angular.png",
             level: 5
+        },
+        {
+            name: "webpack",
+            img: "webpack.png",
+            level: 6
         }
     ]
 
