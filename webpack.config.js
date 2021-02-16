@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const paths = {
     src: path.resolve(__dirname, "src"),
@@ -27,7 +28,15 @@ module.exports = {
                   to: path.join("assets", "images", "skills")},
             ],
         }),
+        // new  BundleAnalyzerPlugin(),
     ],
+    // optimization: {
+    //     minimizer: [
+    //         // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
+    //         `...`,
+    //         new CssMinimizerPlugin(),
+    //       ],
+    // },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, "src"),
@@ -47,21 +56,21 @@ module.exports = {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
             },
-            {   test: /\.(ttf|eot|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i, 
-                loader: 'file-loader' 
+            {   test: /\.(ttf|eot|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+                loader: 'file-loader'
             },
             {   test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
-                loader: 'url-loader', 
+                loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    mimetype: 'application/font-woff2' 
+                    mimetype: 'application/font-woff2'
                 }
             },
             {   test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
                 loader: 'url-loader',
-                options: { 
-                    limit: 10000, 
-                    mimetype: 'application/font-woff' 
+                options: {
+                    limit: 10000,
+                    mimetype: 'application/font-woff'
                 }
             },
             {
