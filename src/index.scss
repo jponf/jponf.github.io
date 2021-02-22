@@ -15,5 +15,61 @@ html {
 }
 
 .img-bg-section {
-    background-image: url(@/assets/images/abstract-graph.svg);
+    background-image: url(@/assets/images/abstract-graph.svg); /* <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a> */
+}
+
+#footer-container {
+    background-color: #868686;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-container:after {  /* height to child content */
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#footer-left {
+    background-color: inherit;
+    float: left;
+    height: 100%;
+    width: 35%;
+    padding: 1rem 0 0 0;
+    margin: 0;
+}
+
+
+#footer-left p {
+    font-weight: 300;
+    vertical-align: middle;
+    color: white;
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#footer-right {
+    background-color: inherit;
+    float: right;
+    height: 100%;
+    width: 65%;
+    padding: 1rem 1rem 0 0;
+    margin: 0;
+}
+
+#footer-right p {
+    text-align: right;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+#footer-right a {
+    color: white;
+}
+
+#footer-right a:visited {
+    color: white;
 }
