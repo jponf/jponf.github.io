@@ -44,6 +44,4 @@ function createComponents() {
     renderContactMe(mainContainer);
 }
 
-// <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a>
-// https://visme.co/blog/website-color-schemes/
 createComponents();
