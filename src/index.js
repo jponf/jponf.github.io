@@ -2,10 +2,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-import '@fortawesome/fontawesome-free/css/brands.min.css';
-import '@fortawesome/fontawesome-free/js/brands.min.js';
-import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+// import '@fortawesome/fontawesome-free/css/brands.min.css';
+// import '@fortawesome/fontawesome-free/js/brands.min.js';
+// import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+library.add(faGithub, faLinkedin, faTwitter)
 
 import Handlebars from 'handlebars/runtime';
 
@@ -35,6 +38,11 @@ Handlebars.registerHelper("mul", function(...values) {
 // Create content
 
 function createComponents() {
+    // import('@fortawesome/fontawesome-free/css/brands.min.css');
+    // import('@fortawesome/fontawesome-free/js/brands.min.js');
+    // import('@fortawesome/fontawesome-free/css/fontawesome.min.css');
+    // import('@fortawesome/fontawesome-free/js/fontawesome.min.js');
+
     var mainContainer = document.getElementById("main-container");
     renderNavBar(mainContainer);
     renderPresentation(mainContainer);

@@ -2,14 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // Optimization
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { config } = require('webpack');
-// const TerserPlugin = require("terser-webpack-plugin");
 
 //
 const paths = {
@@ -22,7 +19,7 @@ module.exports =  (_, argv) => {  // (env, argv)
     console.log("****");
     console.log("* Build mode:", argv.mode);
     console.log("****");
-    
+
     const config = {
         mode: argv.mode,  // production | development | none
         entry: {
@@ -50,7 +47,6 @@ module.exports =  (_, argv) => {  // (env, argv)
                 filename: '[name].[contenthash].css'
             }),
         ],
-    
         resolve: {
             alias: {
                 '@': path.resolve(__dirname, "src"),
@@ -108,7 +104,7 @@ module.exports =  (_, argv) => {  // (env, argv)
             ],
         },
     };
-        
+
     // Development options
     if (process.env.NODE_ENV === "development") {
         // config["plugins"].push(new BundleAnalyzerPlugin())
@@ -130,13 +126,13 @@ module.exports =  (_, argv) => {  // (env, argv)
                     },
                 }),
                 new HtmlMinimizerPlugin(),
-              ],
+            ],
         }
     }
     else if (process.env.NODE_ENV === "test") {
-    
+
     }
-    
-    // 
+
+    //
     return config;
 }
