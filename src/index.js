@@ -12,12 +12,12 @@ library.add(faGithub, faLinkedin, faTwitter)
 
 import Handlebars from 'handlebars/runtime';
 
-import renderNavBar from './components/navbar/navbar.js';
-import renderPresentation from './components/presentation/presentation.js';
-import renderAboutMe from './components/about/about.js';
-import renderSkills from './components/skills/skills.js';
-import renderPublications from './components/publications/publications.js';
-import renderContactMe from './components/contact/contact.js';
+import { setUpNavBar } from './components/navbar/navbar.js';
+import { setUpPresentation } from './components/presentation/presentation.js';
+import { setUpAboutMe } from './components/about/about.js';
+import { setUpSkills } from './components/skills/skills.js';
+import { setUpPublications } from './components/publications/publications.js';
+import { setUpContactMe } from './components/contact/contact.js';
 
 import "./index.scss";
 
@@ -36,20 +36,19 @@ Handlebars.registerHelper("mul", function(...values) {
 
 
 // Create content
+// function createComponents() {
+//     var mainContainer = document.getElementById("main-container");
+// }
 
-function createComponents() {
-    // import('@fortawesome/fontawesome-free/css/brands.min.css');
-    // import('@fortawesome/fontawesome-free/js/brands.min.js');
-    // import('@fortawesome/fontawesome-free/css/fontawesome.min.css');
-    // import('@fortawesome/fontawesome-free/js/fontawesome.min.js');
 
-    var mainContainer = document.getElementById("main-container");
-    renderNavBar(mainContainer);
-    renderPresentation(mainContainer);
-    renderAboutMe(mainContainer);
-    renderSkills(mainContainer);
-    renderPublications(mainContainer);
-    renderContactMe(mainContainer);
+function setUpComponents() {
+    setUpNavBar();
+    setUpPresentation();
+    setUpAboutMe();
+    setUpSkills();
+    setUpPublications();
+    setUpContactMe();
 }
 
-createComponents();
+
+setUpComponents();

@@ -1,10 +1,24 @@
 import waitForElement from '@/utils.js';
 
-import skillsHTML from './skills.html';
+// import skillsHTML from './skills.html';
 import cardHBS from './card.hbs';
 import './skills.css';
 
-export default function renderSkills(container) {
+
+// export function renderSkills(container) {
+//     var template = document.createElement('template');
+//     template.innerHTML = skillsHTML;
+
+//     if (template.content.childNodes.length != 1) {
+//         document.write("Error loading aboutme HTML")
+//     } else {
+//         container.appendChild(template.content.childNodes[0]);
+//         setUpSkills();
+//     }
+// }
+
+
+export function setUpSkills() {
     // technology skills
     var techSkills = [
         {
@@ -52,29 +66,19 @@ export default function renderSkills(container) {
             img: "webpack.png",
             level: 6
         }
-    ]
+    ];
 
-    //
-    var template = document.createElement('template');
-    template.innerHTML = skillsHTML;
+    // sort skills
+    techSkills.sort(function(a, b) {return b.level - a.level});
 
-    if (template.content.childNodes.length != 1) {
-        document.write("Error loading aboutme HTML")
-    } else {
-        container.appendChild(template.content.childNodes[0]);
-        // sort skills
-        techSkills.sort(function(a, b) {return b.level - a.level});
+    waitForElement("#skills-tech").then(function() {
+        var skillsTech = document.getElementById("skills-tech");
+        for (var x of techSkills) {
 
-        waitForElement("#skills-tech").then(function() {
-            var skillsTech = document.getElementById("skills-tech");
-            for (var x of techSkills) {
+            var cardTemplate = document.createElement('template');
+            cardTemplate.innerHTML = cardHBS({skill: x});
 
-                var cardTemplate = document.createElement('template');
-                cardTemplate.innerHTML = cardHBS({skill: x});
-
-                skillsTech.appendChild(cardTemplate.content.childNodes[0]);
-            }
-        });
-
-    }
+            skillsTech.appendChild(cardTemplate.content.childNodes[0]);
+        }
+    });
 }

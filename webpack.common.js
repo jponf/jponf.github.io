@@ -85,6 +85,7 @@ module.exports = {
                         root: paths.src,
                     },
                 },
+                exclude: [ /index\.html$/ ]
             },
             {
                 test: /\.(hbs|handlebars)$/i,
