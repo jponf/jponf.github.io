@@ -59,12 +59,17 @@ export function setUpSkills() {
         {
             name: "Angular",
             img: "angular.png",
-            level: 5
+            level: 7
         },
         {
             name: "webpack",
             img: "webpack.png",
             level: 6
+        },
+        {
+            name: "ASP.NET Core",
+            img: "aspnet-core.png",
+            level: 7
         }
     ];
 
