@@ -1,6 +1,8 @@
 // Bootstrap styles and js
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/js/dist/collapse';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import '@fortawesome/fontawesome-free/css/brands.min.css';
 // import '@fortawesome/fontawesome-free/js/brands.min.js';
