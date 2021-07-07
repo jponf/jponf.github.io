@@ -70,6 +70,11 @@ export function setUpSkills() {
             name: "ASP.NET Core",
             img: "aspnet-core.png",
             level: 7
+        },
+        {
+            name: "Rocks Cluster",
+            img: "rocks-cluster.png",
+            level: 8
         }
     ];
 
