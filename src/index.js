@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub, faLinkedin, faTwitter, faOrcid } from '@fortawesome/free-brands-svg-icons'
-library.add(faGithub, faLinkedin, faTwitter, faOrcid)
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+library.add(faGithub, faLinkedin, faTwitter)
 
 import Handlebars from 'handlebars/runtime';
 
