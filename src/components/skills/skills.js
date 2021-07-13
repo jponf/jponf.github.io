@@ -20,7 +20,7 @@ import './skills.css';
 
 export function setUpSkills() {
     // technology skills
-    var techSkills = [
+    let techSkills = [
         {
             name: "Tensorflow",
             img: "tf.png",
@@ -82,10 +82,9 @@ export function setUpSkills() {
     techSkills.sort(function(a, b) {return b.level - a.level});
 
     waitForElement("#skills-tech").then(function() {
-        var skillsTech = document.getElementById("skills-tech");
-        for (var x of techSkills) {
-
-            var cardTemplate = document.createElement('template');
+        let skillsTech = document.getElementById("skills-tech");
+        for (let x of techSkills) {
+            let cardTemplate = document.createElement('template');
             cardTemplate.innerHTML = cardHBS({skill: x});
 
             skillsTech.appendChild(cardTemplate.content.childNodes[0]);

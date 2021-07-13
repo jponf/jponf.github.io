@@ -7,12 +7,12 @@
 }
 
 #contactme a:link {
-    color: #659DBD;
+    color: white; /* #659DBD;*/
     text-decoration: none;
 }
 
 #contactme a:visited {
-    color: #659DBD;
+    color: white; /* #659DBD; */
     text-decoration: none;
 }
 

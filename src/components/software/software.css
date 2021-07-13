@@ -1,0 +1,31 @@
+
+.software-card-body {
+    padding: 1rem;
+}
+
+.software-head a {
+    text-decoration: none;
+    color: #d58e51; /*#cc9667;*/
+}
+
+.software-head a:hover {
+    transition: .2s ease-in-out;
+    color: #e5cab3;
+}
+
+.software-head h4 {
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.software-languages {
+    text-align: right;
+}
+
+.software-languages span {
+    margin-right: 0.75rem;
+}
+
+.software-languages span:last-child {
+    margin-right: 0;
+}
