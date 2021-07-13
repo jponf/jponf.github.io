@@ -9,8 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-library.add(faGithub, faLinkedin, faTwitter)
+library.add(faCircle, faGithub, faLinkedin, faTwitter)
 
 import Handlebars from 'handlebars/runtime';
 
@@ -19,6 +20,7 @@ import { setUpPresentation } from './components/presentation/presentation.js';
 import { setUpAboutMe } from './components/about/about.js';
 import { setUpSkills } from './components/skills/skills.js';
 import { setUpPublications } from './components/publications/publications.js';
+import { setUpSoftware } from './components/software/software.js';
 import { setUpContactMe } from './components/contact/contact.js';
 
 import "./index.scss";
@@ -49,6 +51,7 @@ function setUpComponents() {
     setUpAboutMe();
     setUpSkills();
     setUpPublications();
+    setUpSoftware();
     setUpContactMe();
 }
 
