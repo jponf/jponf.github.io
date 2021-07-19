@@ -7,7 +7,8 @@ import './software.css';
 let LANG_COLOR = {
     "C": "#EA80FC",
     "C++": "#f34b7d",
-    "Python": "#8C9EFF"
+    "Java": "#b07219",
+    "Python": "#8C9EFF",
 }
 
 
@@ -31,6 +32,18 @@ export function setUpSoftware() {
             about: "A Framework for SAT-based Systems.",
             languages: ["C++", "C", "Python"],
             url: "https://ulog.udl.cat/?page_id=30"
+        },
+        {
+            name: "Neural Style Transfer",
+            about: "Pytorch implementation of the paper \"A Neural Algorithm of Artistic Style\".",
+            languages: ["Python"],
+            url: "https://github.com/jponf/neural-style-transfer"
+        },
+        {
+            name: "jrlisp",
+            about: "Mini-list implementation submitted to the programming contest in memory of Josep Mª Ribó Balust. ",
+            languages: ["Java"],
+            url: "https://github.com/jponf/jrlisp"
         }
     ]
 
