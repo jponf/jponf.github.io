@@ -2,9 +2,13 @@
 .software-list > .row {
     overflow-x: auto;
     overflow-y: hidden;
+
+    /* Firefox scrollbar */
+    scrollbar-color: #d58e51 #d6d6d6;
+    scrollbar-width: thin;
 }
 
-/** Software list scrollbar **/
+/** Blink & Webkit scrollbar**/
 /* width */
 div.software-list ::-webkit-scrollbar {
     width: 10px;
