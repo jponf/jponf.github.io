@@ -41,7 +41,7 @@ export function setUpSoftware() {
         },
         {
             name: "jrlisp",
-            about: "Mini-list implementation submitted to the programming contest in memory of Josep Mª Ribó Balust. ",
+            about: "Mini-list implementation. Programming contest in memory of Josep Mª Ribó Balust. ",
             languages: ["Java"],
             url: "https://github.com/jponf/jrlisp"
         }
