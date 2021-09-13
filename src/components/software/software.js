@@ -25,13 +25,13 @@ export function setUpSoftware() {
             name: "PyDGGA",
             about: "Distributed GGA for automatic configuration.",
             languages: ["Python"],
-            url: "https://ulog.udl.cat/?page_id=30"
+            url: "https://ulog.udl.cat/software"
         },
         {
             name: "OptiLog",
             about: "A Framework for SAT-based Systems.",
             languages: ["C++", "C", "Python"],
-            url: "https://ulog.udl.cat/?page_id=30"
+            url: "https://ulog.udl.cat/software"
         },
         {
             name: "Neural Style Transfer",
