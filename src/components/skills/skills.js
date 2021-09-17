@@ -54,7 +54,7 @@ export function setUpSkills() {
         {
             name: "Grid Engine",
             img: "grid-engine.png",
-            level: 7
+            level: 8
         },
         {
             name: "Angular",
