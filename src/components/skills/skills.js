@@ -75,6 +75,11 @@ export function setUpSkills() {
             name: "Rocks Cluster",
             img: "rocks-cluster.png",
             level: 8
+        },
+        {
+            name: "gRPC",
+            img: "grpc.png",
+            level: 6
         }
     ];
 
