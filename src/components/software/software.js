@@ -13,7 +13,6 @@ let LANG_COLOR = {
 
 export function setUpSoftware() {
     setUpSoftwareList();
-    setUpGitHubStats();
 }
 
 function setUpSoftwareList() {
