@@ -11,9 +11,12 @@ let LANG_COLOR = {
     "Python": "#8C9EFF",
 }
 
-
 export function setUpSoftware() {
-    // software
+    setUpSoftwareList();
+    setUpGitHubStats();
+}
+
+function setUpSoftwareList() {
     let software = [
         {
             name: "pyrl",
@@ -47,13 +50,15 @@ export function setUpSoftware() {
         }
     ]
 
-    waitForElement("#software-deck").then(function() {
+    waitForElement("#software-deck").then(function () {
         let softwareDeck = document.getElementById("software-deck");
         for (var x of software) {
             let languages = x.languages.map(
                 value => {
-                    return {name: value,
-                            color: LANG_COLOR[value]}
+                    return {
+                        name: value,
+                        color: LANG_COLOR[value]
+                    }
                 });
             let cardTemplate = document.createElement('template');
 
