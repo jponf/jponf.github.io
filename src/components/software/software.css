@@ -62,3 +62,7 @@ div.software-list ::-webkit-scrollbar-thumb:hover {
 .software-languages span:last-child {
     margin-right: 0;
 }
+
+#software-github-stats-button {
+    color: #d58e51;
+}
