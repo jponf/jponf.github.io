@@ -33,7 +33,7 @@ function setUpSoftwareList() {
             name: "OptiLog",
             about: "A Framework for SAT-based Systems.",
             languages: ["C++", "C", "Python"],
-            url: "https://ulog.udl.cat/software"
+            url: "https://pypi.org/project/optilog/"
         },
         {
             name: "Neural Style Transfer",
