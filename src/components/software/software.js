@@ -1,7 +1,8 @@
 import waitForElement from '@/utils.js';
 
 // import skillsHTML from './skills.html';
-import cardHBS from './card.hbs';
+import softwareCardHBS from './software-card.hbs';
+import webappCardHBS from './webapp-card.hbs'
 import './software.css';
 
 let LANG_COLOR = {
@@ -13,6 +14,7 @@ let LANG_COLOR = {
 
 export function setUpSoftware() {
     setUpSoftwareList();
+    setUpWebAppsList();
 }
 
 function setUpSoftwareList() {
@@ -33,7 +35,7 @@ function setUpSoftwareList() {
             name: "OptiLog",
             about: "A Framework for SAT-based Systems.",
             languages: ["C++", "C", "Python"],
-            url: "https://ulog.udl.cat/software"
+            url: "https://pypi.org/project/optilog/"
         },
         {
             name: "Neural Style Transfer",
@@ -61,7 +63,7 @@ function setUpSoftwareList() {
                 });
             let cardTemplate = document.createElement('template');
 
-            cardTemplate.innerHTML = cardHBS({
+            cardTemplate.innerHTML = softwareCardHBS({
                 title: x.name,
                 about: x.about,
                 url: x.url,
@@ -69,6 +71,30 @@ function setUpSoftwareList() {
             });
 
             softwareDeck.appendChild(cardTemplate.content.childNodes[0]);
+        }
+    });
+}
+
+function setUpWebAppsList() {
+    let webapps = [
+        {
+            title: "Paraulógic-Solver",
+            about: "A solver for the paraulógic game (catalan spelling bee).",
+            links: [
+                { href: "https://github.com/jponf/paraulogic-solver", text: "Repository" },
+                { href: "https://vilaweb.cat/paraulogic/", text: "Original Game WebApp" }
+            ],
+            url: "https://jponf.github.io/paraulogic-solver/"
+        }
+    ]
+
+    waitForElement("#webapps-deck").then(function () {
+        let webappsDeck = document.getElementById("webapps-deck");
+        for (var x of webapps) {
+            let cardTemplate = document.createElement('template');
+
+            cardTemplate.innerHTML = webappCardHBS(x);
+            webappsDeck.appendChild(cardTemplate.content.childNodes[0]);
         }
     });
 }
