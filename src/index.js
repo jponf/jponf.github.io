@@ -38,6 +38,10 @@ Handlebars.registerHelper("mul", function(...values) {
     return result
 });
 
+Handlebars.registerHelper("isdefined", function(value){
+    return value !== undefined;
+});
+
 
 // Create content
 // function createComponents() {
