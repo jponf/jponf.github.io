@@ -78,8 +78,8 @@ function setUpSoftwareList() {
 function setUpWebAppsList() {
     let webapps = [
         {
-            title: "Paraulógic-Solver",
-            about: "A solver for the paraulógic game (catalan spelling bee).",
+            title: "Paraulògic-Solver",
+            about: "A solver for the paraulògic game (catalan spelling bee).",
             links: [
                 { href: "https://github.com/jponf/paraulogic-solver", text: "Repository" },
                 { href: "https://vilaweb.cat/paraulogic/", text: "Original Game WebApp" }
