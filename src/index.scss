@@ -11,23 +11,29 @@ html {
 }
 
 .color-bg-section {
-    background: linear-gradient(0deg, #dab99d  0%, #cc9667  100%);
+    /* background: linear-gradient(0deg, #dda97b, #ba8f58); */
+    /* background: linear-gradient(0deg, #7395ae, #557a95); */
+    background: linear-gradient(0deg, #939da4, #a3aeb6, #c2cad0);
 }
+
 
 .img-bg-section {
     background-attachment: fixed;
-    background-image: url(@/assets/images/abstract-graph.min.svg); /* <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a> */
+    background-image: url(@/assets/images/abstract-graph.min.svg);
+    /* <a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a> */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #footer-container {
-    background-color: #868686;
+    // background-color: #868686;
+    background-color: #5d5c61;
     padding: 0;
     margin: 0;
 }
 
-#footer-container:after {  /* height to child content */
+#footer-container:after {
+    /* height to child content */
     content: " ";
     display: block;
     clear: both;

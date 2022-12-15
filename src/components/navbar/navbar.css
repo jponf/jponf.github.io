@@ -1,11 +1,11 @@
-
 #main-navbar {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 9999;
-    background-color: #a17741; /* #DAAD86;*/
+    /* background-color: #a17741; /* #DAAD86;*/
+    background-color: #5d5c61;
 }
 
 .navbar-nav a {
