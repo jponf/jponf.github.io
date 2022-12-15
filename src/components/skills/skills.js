@@ -49,12 +49,12 @@ export function setUpSkills() {
         {
             name: "Latex",
             img: "latex.png",
-            level: 8
+            level: 7
         },
         {
             name: "Grid Engine",
             img: "grid-engine.png",
-            level: 8
+            level: 6
         },
         {
             name: "Angular",
@@ -69,28 +69,33 @@ export function setUpSkills() {
         {
             name: "ASP.NET Core",
             img: "aspnet-core.png",
-            level: 7
+            level: 6
         },
-        {
-            name: "Rocks Cluster",
-            img: "rocks-cluster.png",
-            level: 8
-        },
+        // {
+        //     name: "Rocks Cluster",
+        //     img: "rocks-cluster.png",
+        //     level: 8
+        // },
         {
             name: "gRPC",
             img: "grpc.png",
+            level: 6
+        },
+        {
+            name: "AWS",
+            img: "aws.png",
             level: 6
         }
     ];
 
     // sort skills
-    techSkills.sort(function(a, b) {return b.level - a.level});
+    techSkills.sort(function (a, b) { return b.level - a.level });
 
-    waitForElement("#skills-tech").then(function() {
+    waitForElement("#skills-tech").then(function () {
         let skillsTech = document.getElementById("skills-tech");
         for (let x of techSkills) {
             let cardTemplate = document.createElement('template');
-            cardTemplate.innerHTML = cardHBS({skill: x});
+            cardTemplate.innerHTML = cardHBS({ skill: x });
 
             skillsTech.appendChild(cardTemplate.content.childNodes[0]);
         }

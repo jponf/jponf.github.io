@@ -1,10 +1,9 @@
-
-.software-list > .row {
+.software-list>.row {
     overflow-x: auto;
     overflow-y: hidden;
 
     /* Firefox scrollbar */
-    scrollbar-color: #d58e51 #d6d6d6;
+    scrollbar-color: #a3aeb6 #d6d6d6;
     scrollbar-width: thin;
 }
 
@@ -16,19 +15,19 @@ div.software-list ::-webkit-scrollbar {
 
 /* Track */
 div.software-list ::-webkit-scrollbar-track {
-    background: #d6d6d6 ;
+    background: #d6d6d6;
     border-radius: 10px;
 }
 
 /* Handle */
 div.software-list ::-webkit-scrollbar-thumb {
-    background-color: #d58e51 ;
+    background-color: #c2cad0;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 div.software-list ::-webkit-scrollbar-thumb:hover {
-    background-color: #dfaa7c;
+    background-color: #a3aeb6;
 }
 
 /** Software list cards **/
@@ -38,12 +37,13 @@ div.software-list ::-webkit-scrollbar-thumb:hover {
 
 .software-head a {
     text-decoration: none;
-    color: #d58e51; /*#cc9667;*/
+    color: #939da4;
+    /*#cc9667;*/
 }
 
 .software-head a:hover {
     transition: .2s ease-in-out;
-    color: #e5cab3;
+    color: #c2cad0;
 }
 
 .software-head h4 {
@@ -63,7 +63,7 @@ div.software-list ::-webkit-scrollbar-thumb:hover {
     margin-right: 0;
 }
 
-.webapps-list > .row {
+.webapps-list>.row {
     overflow-x: auto;
     overflow-y: hidden;
 
