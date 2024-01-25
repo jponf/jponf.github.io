@@ -1,4 +1,4 @@
-<div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-2">
+<div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-2 d-inline-block">
     <div class="card m-1" style="min-height: 15rem;">
         <div class="card-body software-card-body">
             <div class="card-title software-head mb-2">
@@ -9,9 +9,9 @@
 
             <p class="card-text pt-3 mb-4">{{ about }}</p>
             {{#if (isdefined links)}}
-                {{#each links}}
-                    <p><a href="{{ this.href }}">{{ this.text }}</a></p>
-                {{/each}}
+            {{#each links}}
+            <p><a href="{{ this.href }}">{{ this.text }}</a></p>
+            {{/each}}
             {{/if}}
         </div>
     </div>

@@ -20,6 +20,18 @@ export function setUpSoftware() {
 function setUpSoftwareList() {
     let software = [
         {
+            name: "aia-chaser",
+            about: "Chase authority information access (AIA) from a host certificate to complete the chain of trust.",
+            languages: ["Python"],
+            url: "https://github.com/jponf/aia-chaser"
+        },
+        {
+            name: "OptiLog",
+            about: "A Framework for SAT-based Systems.",
+            languages: ["C++", "C", "Python"],
+            url: "https://pypi.org/project/optilog/"
+        },
+        {
             name: "pyrl",
             about: "Deep reinforcement learning agents implemented with Python.",
             languages: ["Python"],
@@ -30,12 +42,6 @@ function setUpSoftwareList() {
             about: "Distributed GGA for automatic configuration.",
             languages: ["Python"],
             url: "https://ulog.udl.cat/software"
-        },
-        {
-            name: "OptiLog",
-            about: "A Framework for SAT-based Systems.",
-            languages: ["C++", "C", "Python"],
-            url: "https://pypi.org/project/optilog/"
         },
         {
             name: "Neural Style Transfer",
