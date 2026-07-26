@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about-section',
+  host: { 'id': 'aboutme' },
   imports: [],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
-export class About {}
+export class AboutSection {
+  static readonly sectionId = 'aboutme';
+  static readonly sectionLabel = 'About';
+
+  @Input() bgClass = '';
+  @HostBinding('class') get hostClass(): string { return `p-4 ${this.bgClass}`; }
+}

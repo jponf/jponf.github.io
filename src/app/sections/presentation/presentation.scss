@@ -1,4 +1,5 @@
-#presentation {
+:host {
+  display: block;
   padding-bottom: 2em;
 }
 
@@ -6,11 +7,11 @@
   padding-top: 1em;
 }
 
-#presentation h1 {
+:host h1 {
   font-weight: 300;
 }
 
-#presentation h2 {
+:host h2 {
   font-weight: 300;
   font-size: 1.5em;
   padding-top: 2em;
