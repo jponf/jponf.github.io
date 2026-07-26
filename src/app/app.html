@@ -1,0 +1,12 @@
+<app-navbar (heightChange)="navbarHeight.set($event)"></app-navbar>
+
+<div id="main-container" class="container-fluid px-0 pb-0" [style.padding-top.px]="navbarHeight()">
+  <app-presentation></app-presentation>
+  <!-- <app-about></app-about>
+  <app-skills></app-skills>
+  <app-publications></app-publications>
+  <app-software></app-software>
+  <app-contact></app-contact> -->
+</div>
+
+<app-footer></app-footer>
