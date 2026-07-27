@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+:host li {
+    z-index: 120 !important;
+    transition: color 1s;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+:host a:link {
+    color: white; /* #659DBD;*/
+    text-decoration: none;
+}
+
+:host a:visited {
+    color: white; /* #659DBD; */
+    text-decoration: none;
+}
+
+:host a {
+    font-size: 3.5em;
+}
+
+.fa-github:hover {
+    color: #333333;
+}
+
+.fa-linkedin:hover {
+    color: #2867b2;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
