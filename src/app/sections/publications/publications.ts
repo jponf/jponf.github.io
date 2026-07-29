@@ -17,7 +17,7 @@ export class Publications {
       authors: ['Carlos Ansótegui', 'Jesús Ojeda', 'Antoni Pacheco', 'Josep Pon', 'Josep Mª Salvia', 'Eduard Torres'],
       title: 'OptiLog: A Framework for SAT-based Systems',
       venue: 'Theory and Applications of Satisfiability Testing – SAT 2021',
-      link: { href: 'https://doi.org/10.1007/978-3-030-80223-3_1', text: 'DOI: 10.1007/978-3-030-80223-3_2' }
+      link: { href: 'https://doi.org/10.1007/978-3-030-80223-3_1', text: 'DOI: 10.1007/978-3-030-80223-3_1' }
     },
     {
       authors: ['Carlos Ansótegui', 'Josep Pon', 'Meinolf Sellmann', 'Kevin Tierney'],

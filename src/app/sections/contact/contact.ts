@@ -1,6 +1,6 @@
 import { Component, Input, HostBinding } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +15,7 @@ export class Contact {
 
   readonly faGithub = faGithub;
   readonly faLinkedin = faLinkedin;
-  readonly faTwitter = faTwitter;
+  readonly faTwitter = faXTwitter;
 
   @Input() classes = '';
   @HostBinding('class') get hostClass(): string { return this.classes; }
