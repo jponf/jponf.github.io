@@ -36,7 +36,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/jponf.github.io/",
+              "baseHref": "/",
               "outputPath": {
                 "base": "docs",
                 "browser": ""
