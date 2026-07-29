@@ -16,58 +16,17 @@
   </h3>
 
   <ul class="text-center m-0 p-0" style="list-style: none">
-    <li>
-      <p>
-        Carlos Ansótegui, Jesús Ojeda, Antoni Pacheco, Josep Pon, Josep Mª Salvia, Eduard Torres
-      </p>
-      <p><b>OptiLog: A Framework for SAT-based Systems</b></p>
-      <p>Theory and Applications of Satisfiability Testing – SAT 2021</p>
-      <p>
-        <a [class]="linkClasses" href="https://doi.org/10.1007/978-3-030-80223-3_1">
-          DOI: 10.1007/978-3-030-80223-3_2
-        </a>
-      </p>
-    </li>
-    <li>
-      <p>Carlos Ansótegui, Josep Pon, Meinolf Sellmann, Kevin Tierney</p>
-      <p><b>PyDGGA: Distributed GGA for Automatic Configuration</b></p>
-      <p>Theory and Applications of Satisfiability Testing – SAT 2021</p>
-      <p>
-        <a [class]="linkClasses" href="https://doi.org/10.1007/978-3-030-80223-3_2">
-          DOI: 10.1007/978-3-030-80223-3_2
-        </a>
-      </p>
-    </li>
-
-    <li>
-      <p>Carlos Ansótegui, Josep Pon, Meinolf Sellmann</p>
-      <p><b>Boosting evolutionary algorithm configuration.</b></p>
-      <p>Annals of Mathematics and Artificial Intelligence 2021</p>
-      <p>
-        <a [class]="linkClasses" href="https://doi.org/10.1007/s10472-020-09726-y">
-          DOI: 10.1007/s10472-020-09726-y
-        </a>
-      </p>
-    </li>
-    <li>
-      <p>Carlos Ansótegui, Britta Heymann, Josep Pon, Meinolf Sellmann, Kevin Tierney</p>
-      <p><b>Hyper-Reactive Tabu Search for MaxSAT.</b></p>
-      <p>International Conference on Learning and Intelligent Optimization - LION 2018</p>
-      <p>
-        <a [class]="linkClasses" href="https://doi.org/10.1007/978-3-030-05348-2_27">
-          DOI: 10.1007/978-3-030-05348-2_27
-        </a>
-      </p>
-    </li>
-    <li>
-      <p>Carlos Ansótegui, Josep Pon, Meinolf Sellmann, Kevin Tierney</p>
-      <p><b>Reactive Dialectic Search Portfolios for MaxSAT.</b></p>
-      <p>Association for the Advancement of Artificial Intelligence - AAAI 2017</p>
-      <p>
-        <a [class]="linkClasses" href="http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14872">
-          aaai.org (open access)
-        </a>
-      </p>
-    </li>
+    @for (pub of publications; track pub.link.href) {
+      <li>
+        <p>{{ pub.authors.join(', ') }}</p>
+        <p>
+          <b>{{ pub.title }}</b>
+        </p>
+        <p>{{ pub.venue }}</p>
+        <p>
+          <a [class]="linkClasses" [href]="pub.link.href">{{ pub.link.text }}</a>
+        </p>
+      </li>
+    }
   </ul>
 </div>
