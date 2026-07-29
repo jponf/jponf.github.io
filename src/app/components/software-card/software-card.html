@@ -1,0 +1,22 @@
+<div class="mb-2">
+  <div class="card m-1" style="min-height: 15rem">
+    <div class="card-body software-card-body">
+      <div class="card-title software-head mb-2">
+        <a [href]="software.url">
+          <h4 class="card-title d-inline">{{ software.name }}</h4>
+        </a>
+      </div>
+
+      <p class="card-text pt-3 mb-4">{{ software.about }}</p>
+
+      <div class="software-languages">
+        @for (lang of software.languages; track lang) {
+          <span>
+            <fa-icon [style.color]="langColor(lang)" [icon]="faCircle"></fa-icon>
+            {{ lang }}
+          </span>
+        }
+      </div>
+    </div>
+  </div>
+</div>

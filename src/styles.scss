@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.color-bg-section {
+  /* background: linear-gradient(0deg, #dda97b, #ba8f58); */
+  /* background: linear-gradient(0deg, #7395ae, #557a95); */
+  background: linear-gradient(0deg, #62676a, #7d8589, #8b9397);
+}
+
+
+.img-bg-section {
+  background-attachment: fixed;
+  background-image: url(assets/images/abstract-graph.min.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

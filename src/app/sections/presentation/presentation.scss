@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  padding-bottom: 2em;
+}
+
+#presentation-header {
+  padding-top: 1em;
+}
+
+:host h1 {
+  font-weight: 300;
+}
+
+:host h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  padding-top: 2em;
+}
+
+#avatar {
+  background-color: #b3b1a7;
+  /*#FBEEC1;*/
+}

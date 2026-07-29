@@ -1,0 +1,14 @@
+
+:host {
+  display: block;
+}
+
+:host li p {
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0;
+}
+
+:host li {
+    margin-bottom: 1rem;
+}

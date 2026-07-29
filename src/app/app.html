@@ -1,0 +1,15 @@
+<app-navbar (heightChange)="navbarHeight.set($event)" [sections]="sections"></app-navbar>
+
+<div id="main-container" class="container-fluid px-0 pb-0" [style.padding-top.px]="navbarHeight()">
+  <app-presentation classes="img-bg-section"></app-presentation>
+  <app-about-section classes="color-bg-section text-white"></app-about-section>
+  <app-skills classes="img-bg-section"></app-skills>
+  <app-publications
+    classes="color-bg-section text-white"
+    linkClasses="link-light"
+  ></app-publications>
+  <app-software classes="img-bg-section"></app-software>
+  <app-contact classes="color-bg-section text-white"></app-contact>
+</div>
+
+<app-footer></app-footer>

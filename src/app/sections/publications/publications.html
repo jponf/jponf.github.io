@@ -1,0 +1,32 @@
+<div class="container p-4">
+  <h3 class="p-4 text-center">
+    <b>Publications </b>
+    <a
+      itemscope
+      itemtype="https://schema.org/Person"
+      itemprop="sameAs"
+      content="https://orcid.org/0000-0002-1212-1577"
+      href="https://orcid.org/0000-0002-1212-1577"
+      target="orcid.widget"
+      rel="me noopener noreferrer"
+      style="vertical-align: top"
+    >
+      <img src="/assets/images/orcid.logo.icon.svg" style="height: 1em" />
+    </a>
+  </h3>
+
+  <ul class="text-center m-0 p-0" style="list-style: none">
+    @for (pub of publications; track pub.link.href) {
+      <li>
+        <p>{{ pub.authors.join(', ') }}</p>
+        <p>
+          <b>{{ pub.title }}</b>
+        </p>
+        <p>{{ pub.venue }}</p>
+        <p>
+          <a [class]="linkClasses" [href]="pub.link.href">{{ pub.link.text }}</a>
+        </p>
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+:host {
+  display: inline-block;
+}
+
+.webapp-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.webapp-head h4 {
+  margin-bottom: 0;
+}

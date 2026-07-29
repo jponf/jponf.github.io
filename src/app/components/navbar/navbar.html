@@ -1,0 +1,20 @@
+<div class="container-sm">
+  <a class="navbar-brand" (click)="scrollTo('presentation')">Josep Pon Farreny</a>
+
+  <!-- Toggler/collapsible button -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+    aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible navbar items -->
+  <div id="collapsibleNavbar" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngFor="let section of sections">
+        <a class="nav-item nav-link waves-effect waves-dark" (click)="scrollTo(section.id)">
+          {{ section.label }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
