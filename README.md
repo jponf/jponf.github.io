@@ -1,52 +1,57 @@
 # jponf Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.8.
+Personal portfolio website built with **Angular** and **Bootstrap**.
 
 ## Development server
 
-To start a local development server, run:
-
 ```bash
-ng serve
+npm install
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
+Navigate to `http://localhost:4200/`. The application auto-reloads on file changes.
 
 ## Building
 
-To build the project run:
-
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Compiles the project into the `docs/` directory, optimized for production.
+
+## Deploying to GitHub Pages
+
+Build the project, then push the `docs/` output to the `gh-pages` branch:
+
+```bash
+npm run build
+cd docs
+git init
+git add .
+git commit -m "deploy: build"
+git push -f git@github.com:jponf/jponf.github.io.git master:gh-pages
+```
 
 ## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
 ```bash
-ng test
+npm test
 ```
 
-## Running end-to-end tests
+Runs tests with the [Vitest](https://vitest.dev/) test runner.
 
-For end-to-end (e2e) testing, run:
+## Project structure
+
+```
+src/
+├── app/
+│   ├── components/       # Shared reusable components (navbar, footer, cards)
+│   ├── sections/         # Page sections (presentation, about, skills, etc.)
+│   └── models/           # TypeScript interfaces
+├── assets/               # Images and static assets
+├── main.ts               # Application entry point
+└── styles.scss           # Global styles
+```
 
 ```bash
 ng e2e
