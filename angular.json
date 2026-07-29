@@ -37,7 +37,10 @@
           "configurations": {
             "production": {
               "baseHref": "/jponf.github.io/",
-              "outputPath": "docs",
+              "outputPath": {
+                "base": "docs",
+                "browser": ""
+              },
               "budgets": [
                 {
                   "type": "initial",
