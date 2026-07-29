@@ -23,7 +23,6 @@ div.software-list ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 
-
 .webapps-list>.row {
     overflow-x: auto;
     overflow-y: hidden;
@@ -31,4 +30,9 @@ div.software-list ::-webkit-scrollbar-track {
     /* Firefox scrollbar */
     scrollbar-color: #d58e51 #d6d6d6;
     scrollbar-width: thin;
+}
+
+
+#github-stats-button {
+    color: #d58e51;
 }

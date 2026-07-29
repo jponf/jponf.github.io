@@ -22,4 +22,36 @@
       }
     </div>
   </div>
+
+  <div class="mt-2 accordion">
+    <div class="card">
+      <div class="card-header">
+        <button
+          id="github-stats-button"
+          class="btn btn-link w-100 text-center"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#software-github-stats"
+          aria-expanded="false"
+          aria-controls="software-github-stats"
+        >
+          <h5 class="m-0">GitHub Stats</h5>
+        </button>
+      </div>
+      <div id="software-github-stats" class="collapse">
+        <div class="card-body row justify-content-center">
+          <img
+            class="col-sm-12 col-lg-6"
+            alt="GitHub stats"
+            src="https://github-stats-extended.vercel.app/api?username=jponf&show_icons=true&count_private=true&theme=gruvbox"
+          />
+          <img
+            class="col-sm-12 col-lg-6 mt-3 mt-lg-0"
+            alt="Top languages"
+            src="https://github-stats-extended.vercel.app/api/top-langs/?username=jponf&langs_count=8&layout=compact"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
