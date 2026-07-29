@@ -1,1 +1,25 @@
-<p>software works!</p>
+<div class="container p-4">
+  <h3 class="p-4 text-center">
+    <b>Software</b>
+  </h3>
+
+  <div class="software-list">
+    <div class="row flex-nowrap">
+      @for (software of softwareList; track software.name) {
+        <app-software-card [software]="software"></app-software-card>
+      }
+    </div>
+  </div>
+
+  <h4 class="text-center mt-2 p-4">
+    <b>Web Applications</b>
+  </h4>
+
+  <div class="webapps-list">
+    <div class="row justify-content-center flex-nowrap">
+      @for (webapp of webappList; track webapp.title) {
+        <app-webapp-card [webapp]="webapp"></app-webapp-card>
+      }
+    </div>
+  </div>
+</div>

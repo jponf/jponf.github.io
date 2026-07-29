@@ -1,6 +1,6 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { Skill } from '../../models/skill';
+import { SkillEntry } from '../../models/skill-entry';
 import { SkillCard } from '../../components/skill-card/skill-card';
 
 @Component({
@@ -14,7 +14,7 @@ export class Skills implements OnInit {
   static readonly sectionId = 'skills';
   static readonly sectionLabel = 'Skills';
 
-  techSkills: Skill[] = [
+  techSkills: SkillEntry[] = [
     {
       name: "Python",
       img: "python.png",
@@ -87,8 +87,8 @@ export class Skills implements OnInit {
     }
   ];
 
-  @Input() bgClass = '';
-  @HostBinding('class') get hostClass(): string { return this.bgClass; }
+  @Input() classes = '';
+  @HostBinding('class') get hostClass(): string { return this.classes; }
 
   ngOnInit(): void {
     this.techSkills.sort((a, b) => b.level - a.level);

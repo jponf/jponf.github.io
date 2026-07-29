@@ -1,0 +1,25 @@
+:host {
+  display: inline-block;
+}
+
+.software-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.software-head h4 {
+  margin-bottom: 0;
+}
+
+.software-languages {
+  margin-top: auto;
+}
+
+.software-languages span {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.software-languages fa-icon {
+  margin-right: 0.05rem;
+}

@@ -17,6 +17,6 @@ export class Contact {
   readonly faLinkedin = faLinkedin;
   readonly faTwitter = faTwitter;
 
-  @Input() bgClass = '';
-  @HostBinding('class') get hostClass(): string { return this.bgClass; }
+  @Input() classes = '';
+  @HostBinding('class') get hostClass(): string { return this.classes; }
 }

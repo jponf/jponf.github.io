@@ -4,7 +4,6 @@
   </h3>
 
   <div class="row justify-content-center">
-    <!-- <app-skill-card *ngFor="let skill of techSkills" [skill]="skill"></app-skill-card> -->
     @for (skill of techSkills; track skill.name) {
       <app-skill-card [skill]="skill"></app-skill-card>
     }

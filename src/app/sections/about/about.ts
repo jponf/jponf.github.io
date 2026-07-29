@@ -11,6 +11,6 @@ export class AboutSection {
   static readonly sectionId = 'aboutme';
   static readonly sectionLabel = 'About';
 
-  @Input() bgClass = '';
-  @HostBinding('class') get hostClass(): string { return `p-4 ${this.bgClass}`; }
+  @Input() classes = '';
+  @HostBinding('class') get hostClass(): string { return `p-4 ${this.classes}`.trim(); }
 }

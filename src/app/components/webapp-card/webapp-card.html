@@ -1,0 +1,19 @@
+<div class="mb-2">
+  <div class="card m-1" style="min-height: 15rem">
+    <div class="card-body webapp-card-body">
+      <div class="card-title webapp-head mb-2">
+        <a [href]="webapp.url">
+          <h4 class="card-title d-inline">{{ webapp.title }}</h4>
+        </a>
+      </div>
+
+      <p class="card-text pt-3 mb-4">{{ webapp.about }}</p>
+
+      @for (link of webapp.links; track link.text) {
+        <p>
+          <a [href]="link.href">{{ link.text }}</a>
+        </p>
+      }
+    </div>
+  </div>
+</div>

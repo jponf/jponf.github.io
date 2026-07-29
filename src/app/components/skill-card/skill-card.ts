@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Skill } from '../../models/skill';
+import { SkillEntry } from '../../models/skill-entry';
 
 @Component({
   selector: 'app-skill-card',
@@ -11,5 +11,5 @@ import { Skill } from '../../models/skill';
   }
 })
 export class SkillCard {
-  @Input() skill!: Skill;
+  @Input() skill!: SkillEntry;
 }
