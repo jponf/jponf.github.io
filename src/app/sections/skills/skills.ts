@@ -17,7 +17,7 @@ export class Skills implements OnInit {
   techSkills: SkillEntry[] = [
     {
       name: "Python",
-      img: "python.png",
+      img: "python.min.png",
       level: 10
     },
     // {
@@ -27,62 +27,62 @@ export class Skills implements OnInit {
     // },
     {
       name: "PyTorch",
-      img: "pytorch.png",
+      img: "pytorch.min.png",
       level: 9
     },
     {
       name: "Scikit Learn",
-      img: "sklearn.png",
+      img: "sklearn.min.png",
       level: 9
     },
     {
       name: "Docker",
-      img: "docker.png",
+      img: "docker.min.png",
       level: 8
     },
     {
       name: "Google Cloud",
-      img: "gcp.png",
+      img: "gcp.min.png",
       level: 6
     },
     {
       name: "Latex",
-      img: "latex.png",
+      img: "latex.min.png",
       level: 7
     },
     {
       name: "Grid Engine",
-      img: "grid-engine.png",
+      img: "grid-engine.min.png",
       level: 6
     },
     {
       name: "Angular",
-      img: "angular.png",
+      img: "angular.min.png",
       level: 7
     },
     // {
     //   name: "webpack",
-    //   img: "webpack.png",
+    //   img: "webpack.min.png",
     //   level: 6
     // },
     // {
     //   name: "ASP.NET Core",
-    //   img: "aspnet-core.png",
+    //   img: "aspnet-core.min.png",
     //   level: 6
     // },
     // {
     //     name: "Rocks Cluster",
-    //     img: "rocks-cluster.png",
+    //     img: "rocks-cluster.min.png",
     //     level: 8
     // },
     // {
     //   name: "gRPC",
-    //   img: "grpc.png",
+    //   img: "grpc.min.png",
     //   level: 6
     // },
     {
       name: "AWS",
-      img: "aws.png",
+      img: "aws.min.png",
       level: 7
     }
   ];
