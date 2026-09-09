@@ -1,0 +1,31 @@
+<div class="mb-2">
+  <div class="card m-1" style="min-height: 15rem">
+    <div class="card-body contribution-card-body">
+      <div class="card-title contribution-head mb-2">
+        <a [href]="contribution.projectUrl">
+          <h5 class="card-title d-inline">{{ contribution.project }}</h5>
+        </a>
+        <span
+          class="status-badge"
+          [class.status-merged]="status === 'merged'"
+          [class.status-open]="status === 'open'"
+          [class.status-closed]="status === 'closed'"
+        >
+          <fa-icon
+            [icon]="status === 'open' ? faCodePullRequest : faCodeMerge"
+          ></fa-icon>
+          {{ status === 'merged' ? 'Merged' : status === 'open' ? 'Open' : 'Closed' }}
+        </span>
+      </div>
+
+      <p class="card-text contribution-title mb-2">{{ contribution.title }}</p>
+      <p class="card-text pb-3 mb-4">{{ contribution.description }}</p>
+
+      <div class="contribution-link mt-auto">
+        <a [href]="contribution.prUrl" target="_blank" rel="noopener noreferrer"
+          >View pull request &rarr;</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

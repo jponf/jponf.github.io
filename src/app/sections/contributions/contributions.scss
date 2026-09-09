@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.contributions-intro {
+  max-width: 40rem;
+  opacity: 0.9;
+}
+
+.contributions-list > .row {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* Firefox scrollbar */
+  scrollbar-color: #a3aeb6 #d6d6d6;
+  scrollbar-width: thin;
+}
+
+/** Blink & Webkit scrollbar**/
+div.contributions-list ::-webkit-scrollbar {
+  width: 10px;
+}
+
+div.contributions-list ::-webkit-scrollbar-track {
+  background: #d6d6d6;
+  border-radius: 10px;
+}

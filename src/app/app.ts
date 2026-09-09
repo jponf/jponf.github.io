@@ -7,11 +7,12 @@ import { AboutSection } from './sections/about/about';
 import { Skills } from './sections/skills/skills';
 import { Publications } from './sections/publications/publications';
 import { Software } from './sections/software/software';
+import { Contributions } from './sections/contributions/contributions';
 import { Contact } from './sections/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Footer, Presentation, AboutSection, Skills, Publications, Software, Contact],
+  imports: [Navbar, Footer, Presentation, AboutSection, Skills, Publications, Software, Contributions, Contact],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -24,6 +25,7 @@ export class App {
     { id: Skills.sectionId, label: Skills.sectionLabel },
     { id: Publications.sectionId, label: Publications.sectionLabel },
     { id: Software.sectionId, label: Software.sectionLabel },
+    { id: Contributions.sectionId, label: Contributions.sectionLabel },
     { id: Contact.sectionId, label: Contact.sectionLabel },
   ];
 }

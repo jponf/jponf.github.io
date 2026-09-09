@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SkillCard } from './skill-card';
+import { SkillEntry } from '../../models/skill-entry';
 
 describe('SkillCard', () => {
   let component: SkillCard;
@@ -13,6 +14,11 @@ describe('SkillCard', () => {
 
     fixture = TestBed.createComponent(SkillCard);
     component = fixture.componentInstance;
+    component.skill = {
+      name: 'Sample Skill',
+      img: 'sample.min.png',
+      level: 5,
+    } as SkillEntry;
     await fixture.whenStable();
   });
 
