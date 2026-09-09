@@ -1,0 +1,18 @@
+<div class="container p-4">
+  <h3 class="p-4 text-center">
+    <b>Open Source Contributions</b>
+  </h3>
+
+  <p class="text-center contributions-intro mx-auto mb-4">
+    A selection of fixes and improvements I've contributed back to open source
+    projects I rely on, after running into issues while using them.
+  </p>
+
+  <div class="contributions-list">
+    <div class="row flex-nowrap">
+      @for (contribution of contributions; track contribution.prUrl) {
+        <app-contribution-card [contribution]="contribution"></app-contribution-card>
+      }
+    </div>
+  </div>
+</div>

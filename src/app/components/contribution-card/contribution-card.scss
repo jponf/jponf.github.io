@@ -1,0 +1,65 @@
+:host {
+  display: inline-block;
+}
+
+.contribution-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contribution-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contribution-head h5 {
+  margin-bottom: 0;
+}
+
+.contribution-title {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+.status-merged {
+  background-color: rgba(130, 80, 223, 0.15);
+  color: #8250df;
+}
+
+.status-open {
+  background-color: rgba(35, 134, 54, 0.15);
+  color: #238636;
+}
+
+.status-closed {
+  background-color: rgba(207, 34, 46, 0.15);
+  color: #cf222e;
+}
+
+.contribution-link {
+  margin-top: auto;
+}
+
+.contribution-link a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contribution-link a:hover {
+  text-decoration: underline;
+}
