@@ -21,7 +21,7 @@ export class Contributions {
       description:
         'Fixed a JSON serialization crash in AzureSearchVectorStoreRetriever by converting numpy.float32 vector elements to native Python floats.',
       prUrl: 'https://github.com/langchain-ai/langchain-azure/pull/1018',
-      status: 'open',
+      status: 'merged',
     },
     {
       project: 'cachetools',
