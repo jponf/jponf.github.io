@@ -25,8 +25,10 @@ export class ContributionCard implements OnInit {
 
   ngOnInit(): void {
     this.status = this.contribution.status;
-    this.githubPrStatus.getStatus(this.contribution.prUrl).subscribe((status) => {
-      this.status = status;
-    });
+    this.githubPrStatus
+      .getStatus(this.contribution.prUrl, this.contribution.status)
+      .subscribe((status) => {
+        this.status = status;
+      });
   }
 }

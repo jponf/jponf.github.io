@@ -16,7 +16,7 @@ export class GithubPrStatusService {
 
   constructor(private readonly http: HttpClient) {}
 
-  getStatus(prUrl: string): Observable<PullRequestStatus> {
+  getStatus(prUrl: string, fallback: PullRequestStatus = 'open'): Observable<PullRequestStatus> {
     const cached = this.cache.get(prUrl);
     if (cached) {
       return cached;
@@ -26,9 +26,9 @@ export class GithubPrStatusService {
     const status$ = (apiUrl
       ? this.http.get<GitHubPullRequestResponse>(apiUrl).pipe(
           map((pr) => this.toStatus(pr)),
-          catchError(() => of<PullRequestStatus>('merged')),
+          catchError(() => of<PullRequestStatus>(fallback)),
         )
-      : of<PullRequestStatus>('merged')
+      : of<PullRequestStatus>(fallback)
     ).pipe(shareReplay({ bufferSize: 1, refCount: false }));
 
     this.cache.set(prUrl, status$);
